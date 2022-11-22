@@ -6,11 +6,19 @@ import { MainNavigationTabs } from './lib/util/navigation/Tabs';
 
 const Tab = createBottomTabNavigator();
 
+// const App = () => {
+//     return (
+//         <NavigationContainer style={AllStyles.NoBorder} >
+//             <MainNavigationTabs />
+//         </NavigationContainer>
+//     );
+// }
+
 const App = () => {
     return (
-        <NavigationContainer style={AllStyles.NoBorder} >
-            <MainNavigationTabs />
-        </NavigationContainer>
+        <View>
+            <Text>Hello</Text>
+        </View>
     );
 }
 
