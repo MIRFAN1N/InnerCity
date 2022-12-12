@@ -9,6 +9,7 @@ import {AppIntro} from './lib/screens/Intro';
 import {HomeScreen} from './lib/screens/Test/Main';
 import {ProfileScreen} from './lib/screens/Test/Profile';
 import {GamesScreen} from './lib/screens/Test/Games';
+import {GameScreen} from './lib/screens/Test/Game';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
@@ -20,7 +21,7 @@ const MainStackScreen = () => {
       <MainStack.Screen name="Profile" component={ProfileScreen} />
       <MainStack.Screen name="EditProfile" component={ProfileScreen} />
       <MainStack.Screen name="Games" component={GamesScreen} />
-      <MainStack.Screen name="Game" component={ProfileScreen} />
+      <MainStack.Screen name="Game" component={GameScreen} />
       <MainStack.Screen name="Reward" component={ProfileScreen} />
       {/* <MainStack.Screen name="Games" component={GamesScreen} /> */}
     </MainStack.Navigator>
