@@ -1,8 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {MainNavigationTabs} from './lib/util/navigation/Tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 // import { } from './lib/screens/Intro';
 import {AppIntro} from './lib/screens/Intro';
