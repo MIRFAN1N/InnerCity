@@ -8,6 +8,7 @@ import {ProfileScreen} from './lib/screens/Test/Profile';
 import {GamesScreen} from './lib/screens/Test/Games';
 import {GameScreen} from './lib/screens/Test/Game';
 import {RewardScreen} from './lib/screens/Test/Reward';
+import {SongsReward} from './lib/screens/Test/Rewards/SongsReward';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
@@ -21,6 +22,7 @@ const MainStackScreen = () => {
       <MainStack.Screen name="Games" component={GamesScreen} />
       <MainStack.Screen name="Game" component={GameScreen} />
       <MainStack.Screen name="Reward" component={RewardScreen} />
+      <MainStack.Screen name="SongsReward" component={SongsReward} />
     </MainStack.Navigator>
   );
 };
