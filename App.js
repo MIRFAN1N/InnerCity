@@ -9,7 +9,7 @@ import {GamesScreen} from './lib/screens/Test/Games';
 import {GameScreen} from './lib/screens/Test/Game';
 import {RewardScreen} from './lib/screens/Test/Reward';
 import {SongsReward} from './lib/screens/Test/Rewards/SongsReward';
-import {MovieReward} from './lib/screens/Test/Rewards/MovieReward';
+import {MoviesReward} from './lib/screens/Test/Rewards/MoviesReward';
 import {BooksReward} from './lib/screens/Test/Rewards/BooksReward';
 import {QuotesReward} from './lib/screens/Test/Rewards/QuotesReward';
 
@@ -26,7 +26,7 @@ const MainStackScreen = () => {
       <MainStack.Screen name="Game" component={GameScreen} />
       <MainStack.Screen name="Reward" component={RewardScreen} />
       <MainStack.Screen name="SongsReward" component={SongsReward} />
-      <MainStack.Screen name="MovieReward" component={MovieReward} />
+      <MainStack.Screen name="MoviesReward" component={MoviesReward} />
       <MainStack.Screen name="BooksReward" component={BooksReward} />
       <MainStack.Screen name="QuotesReward" component={QuotesReward} />
     </MainStack.Navigator>
