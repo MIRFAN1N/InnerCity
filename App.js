@@ -12,6 +12,7 @@ import {SongsReward} from './lib/screens/Test/Rewards/SongsReward';
 import {MoviesReward} from './lib/screens/Test/Rewards/MoviesReward';
 import {BooksReward} from './lib/screens/Test/Rewards/BooksReward';
 import {QuotesReward} from './lib/screens/Test/Rewards/QuotesReward';
+import {NewsReward} from './lib/screens/Test/Rewards/NewsRewards';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
@@ -29,6 +30,7 @@ const MainStackScreen = () => {
       <MainStack.Screen name="MoviesReward" component={MoviesReward} />
       <MainStack.Screen name="BooksReward" component={BooksReward} />
       <MainStack.Screen name="QuotesReward" component={QuotesReward} />
+      <MainStack.Screen name="NewsReward" component={NewsReward} />
     </MainStack.Navigator>
   );
 };
