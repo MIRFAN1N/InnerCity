@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 // import { } from './lib/screens/Intro';
@@ -13,6 +13,8 @@ import {MoviesReward} from './lib/screens/Test/Rewards/MoviesReward';
 import {BooksReward} from './lib/screens/Test/Rewards/BooksReward';
 import {QuotesReward} from './lib/screens/Test/Rewards/QuotesReward';
 import {NewsReward} from './lib/screens/Test/Rewards/NewsRewards';
+import {EditProfileScreen} from './lib/screens/Test/EditProfile';
+import SplashScreen from 'react-native-splash-screen';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
@@ -22,7 +24,7 @@ const MainStackScreen = () => {
     <MainStack.Navigator screenOptions={MainNavigatorOpt}>
       <MainStack.Screen name="Home" component={HomeScreen} />
       <MainStack.Screen name="Profile" component={ProfileScreen} />
-      <MainStack.Screen name="EditProfile" component={ProfileScreen} />
+      <MainStack.Screen name="EditProfile" component={EditProfileScreen} />
       <MainStack.Screen name="Games" component={GamesScreen} />
       <MainStack.Screen name="Game" component={GameScreen} />
       <MainStack.Screen name="Reward" component={RewardScreen} />
@@ -36,6 +38,9 @@ const MainStackScreen = () => {
 };
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  });
   return (
     <NavigationContainer>
       <Tabs.Navigator screenOptions={MainNavigatorOpt}>
