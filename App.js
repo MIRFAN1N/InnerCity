@@ -41,6 +41,7 @@ const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   });
+
   return (
     <NavigationContainer>
       <Tabs.Navigator screenOptions={MainNavigatorOpt}>
