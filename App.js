@@ -15,6 +15,7 @@ import {QuotesReward} from './lib/screens/Test/Rewards/QuotesReward';
 import {NewsReward} from './lib/screens/Test/Rewards/NewsRewards';
 import {EditProfileScreen} from './lib/screens/Test/EditProfile';
 import SplashScreen from 'react-native-splash-screen';
+import {GameVideo} from './lib/screens/Test/GameVideo';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
@@ -27,6 +28,7 @@ const MainStackScreen = () => {
       <MainStack.Screen name="EditProfile" component={EditProfileScreen} />
       <MainStack.Screen name="Games" component={GamesScreen} />
       <MainStack.Screen name="Game" component={GameScreen} />
+      <MainStack.Screen name="GameVideo" component={GameVideo} />
       <MainStack.Screen name="Reward" component={RewardScreen} />
       <MainStack.Screen name="SongsReward" component={SongsReward} />
       <MainStack.Screen name="MoviesReward" component={MoviesReward} />
