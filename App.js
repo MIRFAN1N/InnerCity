@@ -16,6 +16,7 @@ import {NewsReward} from './lib/screens/Test/Rewards/NewsRewards';
 import {EditProfileScreen} from './lib/screens/Test/EditProfile';
 import SplashScreen from 'react-native-splash-screen';
 import {GameVideo} from './lib/screens/Test/GameVideo';
+import {ForgotPassword} from './lib/screens/auth/ForgotPassword';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
@@ -52,6 +53,7 @@ const App = () => {
           component={AppIntro}
           options={{tabBarVisible: false, tabBarButton: props => null}}
         />
+        <Tabs.Screen name="ForgotPassword" component={ForgotPassword} />
         <Tabs.Screen
           name="Main"
           component={MainStackScreen}
