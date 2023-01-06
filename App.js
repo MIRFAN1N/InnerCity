@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {NavigationContainer, useRoute} from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 // import { } from './lib/screens/Intro';
 import {AppIntro} from './lib/screens/Intro';
@@ -19,31 +19,11 @@ import {GameVideo} from './lib/screens/Test/GameVideo';
 import {ForgotPassword} from './lib/screens/auth/ForgotPassword';
 import {ResetPasswordLink} from './lib/screens/auth/ResetPasswordLink';
 import {ChangePasswordScreen} from './lib/screens/Test/ChangePassword';
-import Sound from 'react-native-sound';
 
 const MainStack = createStackNavigator();
 const Tabs = createStackNavigator();
 
 const MainStackScreen = () => {
-  const route = useRoute();
-  console.log(route.name);
-
-  // if (route.name === 'Reward') {
-  //   Sound.setCategory('Playback');
-  //   var sound1 = new Sound(
-  //     require('./lib/assets/sound/cheers.mp3'),
-  //     (error, sound) => {
-  //       if (error) {
-  //         console.log('error' + error.message);
-  //         return;
-  //       }
-
-  //       sound1.play(() => {
-  //         console.log('song playing');
-  //       });
-  //     },
-  //   );
-  // }
   return (
     <MainStack.Navigator screenOptions={MainNavigatorOpt}>
       <MainStack.Screen name="Home" component={HomeScreen} />
